@@ -9,7 +9,7 @@
 // ? In the case of the deposit, is the amount the king watns to deposit
 
 const bankerReducer = (state = 0, action) => {
-  switch (action) {
+  switch (action.type) {
     case "Increase":
       return state + action.payload;
     case "Decrease":
